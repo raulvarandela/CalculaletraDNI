@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?><!--constraintlayout no lo vamos a usar-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.MainActivity">
+
+
+    <!--Primer layout para introducir el dni-->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".33">
+
+        <!--textview para mostrar un mensaje-->
+        <TextView
+            android:layout_marginLeft="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:gravity="left"
+            android:text="Introduzca su DNI: " />
+
+        <!--Edittext para introducir el DNI-->
+        <EditText
+            android:layout_marginRight="12dp"
+            android:id="@+id/edDNI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:inputType="number"
+            android:layout_weight=".5" />
+
+    </LinearLayout>
+
+    <!--Segundo layout para mostar el mensaje-->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".33">
+
+        <!--TextView para mostrar un mensaje-->
+        <TextView
+            android:layout_marginLeft="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resultado: "
+            android:gravity="left"
+            android:layout_weight=".5"/>
+
+        <!--Textview para mostar el resultado-->
+        <TextView
+            android:layout_marginRight="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/edResultado"
+            android:layout_weight=".5"/>
+
+    </LinearLayout>
+
+    <!--tercer layout para mostrar el boton de salir-->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".33">
+
+        <Button
+            android:id="@+id/botonSalir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Salir!"
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
